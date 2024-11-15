@@ -1,0 +1,1188 @@
+@charset "utf-8";
+body{
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+header{
+    margin: 0 auto;
+    background-image: url(../img/vs_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+header > .wrap{
+    padding: 120px 0 373px;
+}
+header h1{
+    margin: 0 auto;
+    text-align: center;
+}
+header h1 > a{
+    margin: 0 auto;
+    display: block;
+    width: 180px;
+}
+header h1 > a > img{
+    width: 100%;
+}
+header nav{
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 38px 0;
+}
+header nav > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav > ul > li{
+    margin: 0 50px;
+    font-size: 18px;
+    color: #ddd;
+    position: relative;
+}
+header nav > ul > li:hover{
+    color: #fff;
+}
+header nav > ul > li:nth-child(2) span{
+    display: block;
+    content: '';
+    background-color: #fff;
+    width: 28px;
+    height: 6px;
+}
+header nav > ul > li:nth-child(2) span:nth-child(2){
+    margin: 3px 0;
+}
+header nav > ul > li:hover > ul{
+    display:block;
+    transition: 3s;
+}
+header nav > ul > li > ul{
+    transition: 3s;
+    display: none;
+    position: absolute;
+    padding-top: 43px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+header nav > ul > li > ul > li{
+    text-align: center;
+    padding: 20px 20px;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 16px;
+}
+header nav > ul > li > ul > li:hover{
+    background-color: #000;
+    color: #fff;
+}
+/* side menu */
+.sitemap{
+    display: none;
+    position: fixed;
+    margin: 0 auto;
+    z-index: 5;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100vh;
+}
+.sitemap > .site_header{
+    margin: 150px auto;
+    width: 83.3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sitemap > .site_header h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+.sitemap > .site_header > div > span{
+    display: block;
+    content: "";
+    width: 28px;
+    height: 6px;
+    background-color: #ddd;
+}
+.sitemap > .site_header > div:hover > span{
+    background-color: #fff;
+}
+.sitemap > .site_header > div > span:nth-child(1){
+    transform: rotate(45deg);
+}
+.sitemap > .site_header > div > span:nth-child(2){
+    transform: rotate(-45deg);
+    position: relative;
+    top: -5.5px;
+}
+.site_visual{
+    width: 83.3%;
+    margin: 0 auto;
+}
+.site_visual > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    line-height: 1.8;
+    padding-bottom: 30px;
+}
+.site_visual > ul > li{
+    border-right: 1px solid #eee;
+    padding-right: 50px;
+}
+.site_visual > ul > li:last-child{
+    border-right: none;
+    padding-right: 0;
+}
+.site_visual > ul > li > a{
+    font-size: 20px;
+    color: #fff;
+}
+.site_visual > ul > li > ul{
+    margin-top: 30px;
+}
+.site_visual > ul > li > ul > li{
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #fff;
+}
+/* side menu */
+.vs1{
+    padding: 109px 0 32px;
+    margin: 0 auto;
+    width: 83.3%;
+}
+.vs1 h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 92px;
+}
+.vs1 .emblems{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vs1 .emblems article{
+    width: 106px;
+    margin: 0 15px;
+    overflow: hidden;
+}
+.vs1 .emblems > article > img{
+    width: 100%;
+}
+.vs1 p{
+    margin-top: 54px;
+    font-size: 14px;
+    text-align: right;
+}
+.vs2{
+    margin: 0 auto;
+    width: 83.3%;
+}
+.vs2 > .wrap{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.vs2 .left_img{
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    flex: 8 1 0;
+    gap: 30px;
+}
+.vs2 .left_img > .lt{
+    width: 100%;
+    height: 50%;
+    background-image: url(../img/vs03_1.jpg);
+    background-position: center;
+    position: relative;
+}
+.vs2 .left_img > .lt> p{
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    right: 42px;
+    bottom: 43px;
+}
+.vs2 .left_img > .lb{
+    width: 100%;
+    height: 50%;
+    background-image: url(../img/vs03_3.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.vs2 .left_img > .lb> p{
+    width: 300px;
+    word-break: keep-all;
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    left: 33px;
+    bottom: 34px;
+}
+.vs2 .right_img{
+    flex: 4 1 0;
+    position:relative;
+}
+.vs2 .right_img > a{
+    display: none;
+    width: 200px;
+    position: absolute;
+    bottom: 77px;
+    right: 30px;
+    z-index: 20;
+    font-size: 32px;
+    font-weight: bold;
+}
+.vs2 .right_img:hover > img{
+    opacity: 0.3;
+}
+.vs2 .right_img:hover > a{
+    display: block;
+}
+.vs3 {
+    margin: 0 0 55px;
+}
+.vs3 h2{
+    font-size: 50px;
+    padding: 150px 0 60px;
+    text-align: center;
+    font-weight: bold;
+    background-image: url(../img/vs04_bg-1.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.vs3 > .wrap{
+    margin: 0 auto;
+    width: 83.3%;
+}
+.vs3 > .wrap p{
+    text-align: right;
+    margin: 20px 0 28px;
+}
+.vs3 .birth > article{
+    margin: 0 auto;
+    border: 1px solid #eee;
+    text-align: center;
+}
+.vs3 .birth article > div{
+    background-color: #f8f8f8;
+    margin: 30px 26px 0;
+    height: 202px;
+    position: relative;
+    overflow: hidden;
+}
+.vs3 .birth .birth_img1 > div > img{
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 0;
+}
+.vs3 .birth .birth_img2 > div > img{
+    position: absolute;
+    top: 16px;
+    left: 32px;
+}
+.vs3 .birth .birth_img3 > div > img{
+    position: absolute;
+    top: 14px;
+    right: 5px;
+}
+.vs3 .birth .birth_img4 > div > img{
+    position: absolute;
+    bottom: 11px;
+    left: 48px;
+}
+.vs3 .birth .birth_img5 > div > img{
+    position: absolute;
+    top: 35px;
+    right: 0px;
+}
+.vs3 .birth .birth_img6 > div > img{
+    position: absolute;
+    bottom: 13px;
+    left: 78px;
+}
+.vs3 .birth .birth_img7 > div > img{
+    position: absolute;
+    top: 18px;
+    left: 32px;
+}
+.vs3 .birth .birth_img8 > div > img{
+    position: absolute;
+    top: 26px;
+    right: 0;
+}
+.vs3 .birth .birth_img9 > div > img{
+    position: absolute;
+    bottom: 0;
+    left: 44px;
+}
+.vs3 .birth .birth_img10 > div > img{
+    position: absolute;
+    top: -30px;
+    left: 34px;
+}
+.vs3 .birth .birth_img11 > div > img{
+    position: absolute;
+    bottom: -30px;
+    left: 20px;
+}
+.vs3 .birth .birth_img12 > div > img{
+    position: absolute;
+    top: 0;
+    left: 18px;
+}
+.vs3 .birth > article > p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 40px 0 25px;
+}
+.vs3 .birth > article > p>span{
+    font-size: 14px;
+    font-weight: bold;
+}
+.vs3 .birth > article > span{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.vs3 > .wrap > a{
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+    margin: 62px 30px 56px 0;
+}
+.vs4{
+    width: 83.3%;
+    margin: 0 auto;
+}
+.vs4 > .wrap{
+    padding: 67px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.vs4 > .wrap > .vs04_left{
+    flex: 6 1 0;
+}
+.vs4 > .wrap > .vs04_left article{
+    width: 786px;
+}
+.vs4 > .wrap > .vs04_left article > img{
+    width: 100%;
+    height: 100%;
+}
+.vs4 > .wrap > .vs04_right{
+    flex: 6 1 0;
+}
+.vs4 > .wrap > .vs04_right > .top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.vs4 > .wrap > .vs04_right > .top > article{
+    width: 378px;
+    height: 357px;
+    position: relative;
+}
+.vs4 > .wrap > .vs04_right > .top > article > img{
+    width: 100%;
+    height: 100%;
+}
+.vs4 > .wrap > .vs04_right > .top > article:hover > img{
+    opacity: 0.3;
+    transition: 1s;
+}
+.vs4 > .wrap > .vs04_right > .top > article > p{
+    display: none;
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: bold;
+}
+.vs4 > .wrap > .vs04_right > .top > article:hover > p{
+    display: block;
+}
+.vs4 > .wrap > .vs04_right > .bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.vs4 > .wrap > .vs04_right > .bottom > article{
+    width: 378px;
+    height: 357px;
+    position: relative;
+}
+.vs4 > .wrap > .vs04_right > .bottom > article > img{
+    width: 100%;
+    height: 100%;
+}
+.vs4 > .wrap > .vs04_right > .bottom > article:hover > img{
+    opacity: 0.3;
+    transition: 1s;
+}
+.vs4 > .wrap > .vs04_right > .bottom > article > p{
+    display: none;
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: bold;
+}
+.vs4 > .wrap > .vs04_right > .bottom > article:hover > p{
+    display: block;
+}
+.vs5 {
+    width: 83.3%;
+    margin: 0 auto;
+    padding: 45px 0;
+}
+.vs5 .container article{
+    position: relative;
+    margin: 0 15px;
+}
+.vs5 .container article:hover img{
+    opacity: 0.3;
+}
+.vs5 .container article a{
+    display: none;
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    font-weight: bold;
+}
+.vs5 .container article:hover a{
+    display: block;
+}
+footer{
+    background-color: #eee;
+    margin: 0 auto;
+}
+footer .wrap{
+    width: 83.3%;
+    margin: 0 auto;
+}
+footer h2{
+    margin: 0 auto;
+    text-align: center;
+    width: 140px;
+    padding: 40px 0 17px;
+}
+footer h2 a{
+    display: block;
+}
+footer h2 img{
+    width: 100%;
+}
+footer .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+footer .content > .left > .follow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 308px;
+    background-color: #fff;
+    padding: 10px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 17px;
+}
+footer .content > .left > .follow > .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+footer .content > .left > .follow > .icon > a{
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+footer .content > .left > .follow > .icon > a:nth-child(2){
+    width: 40px;
+}
+footer .content > .left > .follow > .icon > a > img{
+    width: 100%;
+    height: 100%;
+}
+footer .content > .left > .footer_menu{
+    font-size: 16px;
+    color: #3a3a3a;
+    background-color: #fff;
+    padding: 14px 40px;
+    margin: 0 auto 17px;
+    text-align: center;
+}
+footer .content > .left > .footer_menu > a{
+    margin: 0 40px;
+}
+footer .content > .left > .footer_menu > a:hover{
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;   
+}
+footer .content > .left > .img{
+    text-align: center;
+    margin: 0 auto 20px;
+}
+footer .content > .left > .img > img{
+    width: 200px;
+    height: 46px;
+}
+footer .content > .left > .img > img:nth-child(2){
+    margin: 0 30px;
+}
+footer .content > .right{
+    line-height: 1.6;
+}
+footer .content > .right > p{
+    font-size: 14px;
+    color: #000;
+}
+footer .content > .right > p:nth-child(5){
+    margin-top: 10px;
+}
+footer .content > .right > p > span{
+    color: #aaa;
+}
+
+/* 반응형 */
+@media screen and (min-width : 1000px) and (max-width: 1185px){
+    /*vs4, footer */
+    header nav > ul > li{
+        margin: 0 30px;
+    }
+    .site_visual > ul {
+        gap: 50px;
+        word-break: keep-all;
+        line-height: 1.3;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    .site_visual > ul > li > ul > li{
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .vs2 > .wrap{
+        gap: 20px;
+    }
+    .vs2 .left_img{
+        flex: 4 1 0;
+        gap: 20px;
+    }
+    .vs2 .left_img > .lt> p{
+        font-size: 16px;
+        right: 10px;
+        bottom: 10px;
+    }
+    .vs2 .left_img > .lb> p{
+        width: 200px;
+        word-break: keep-all;
+        font-size: 16px;
+        font-weight: bold;
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+    }
+    .vs2 .right_img{
+        flex: 4 1 0;
+        position:relative;
+    }
+    .vs2 .right_img > img{
+        width: 100%;
+        height: 100%;
+    }
+    .vs2 .right_img > a{
+        right: -80px;
+        font-size: 18px;
+    }
+    .vs3 h2{
+        font-size: 40px;
+        padding: 100px 0 50px;
+    }
+    .vs3 > .wrap p{
+        font-size: 12px;
+    }
+    .vs3 .birth article > div{
+        margin: 20px 16px 0;
+        height: 180px;
+    }
+    .vs3 .birth div > img{
+        position: absolute;
+        display: block;
+        width: 120px;
+    }
+    .vs3 .birth > article > p{
+        font-size: 14px;
+        font-weight: bold;
+        margin: 30px auto 15px;
+    }
+    .vs3 .birth > .birth_img3 > p{
+        font-size: 14px;
+        font-weight: bold;
+        margin: 25px auto 6px;
+    }
+    .vs3 .birth > article > p > span{
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .vs3 .birth > article > span{
+        display: block;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .vs3 > .wrap > a{
+        font-size: 18px;
+        margin: 26px 0 16px 0;
+    }
+    .vs4 > .wrap{
+        padding: 40px 0;
+        gap: 20px;
+    }
+    .vs4 > .wrap > .vs04_left article{
+        width: 500px;
+    }
+    .vs4 > .wrap > .vs04_right > .top{
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .vs4 > .wrap > .vs04_right > .top > article{
+        width: 210px;
+        height: 238px;
+        position: relative;
+    }
+    .vs4 > .wrap > .vs04_right > .top > article > p{
+        font-size: 14px;
+        width: 200px;
+        text-align: center;
+    }
+    .vs4 > .wrap > .vs04_right > .bottom{
+        gap: 20px;
+    }
+    .vs4 > .wrap > .vs04_right > .bottom > article{
+        width: 210px;
+        height: 238px;
+        position: relative;
+    }
+    .vs4 > .wrap > .vs04_right > .bottom > article > p{
+        font-size: 14px;
+    }
+    .vs5 .container article img{
+        width: 265px;
+    }
+    footer h2{
+        margin: 0 auto;
+        width: 100px;
+        padding: 40px 0 17px;
+    }
+    footer .content > .left > .follow{
+        padding: 8px 40px;
+    }
+    footer .content > .left > .follow > .icon{
+        gap: 20px;
+    }
+    footer .content > .left > .footer_menu{
+        font-size: 14px;
+    }
+    footer .content > .left > .footer_menu > a{
+        margin: 0 20px;
+    }
+    footer .content > .left > .img > img{
+        width: 160px;
+        height: 36px;
+    }
+    footer .content > .left > .img > img:nth-child(2){
+        margin: 0 30px;
+    }
+    footer .content > .right{
+        line-height: 1.6;
+    }
+    footer .content > .right > p{
+        font-size: 10px;
+        color: #000;
+    }
+}
+@media screen and (min-width : 730px) and (max-width: 999px){
+    header nav > ul > li:nth-child(3){
+        display: none;
+    }
+    header nav > ul > li:nth-child(4){
+        display: none;
+    }
+    header nav > ul > li:nth-child(5){
+        display: none;
+    }
+    header nav > ul > li:nth-child(6){
+        display: none;
+    }
+    header nav > ul > li:nth-child(7){
+        display: none;
+    }
+    .sitemap > .site_header{
+        margin: 80px auto;
+    }
+    .site_visual > ul {
+        display: block;
+        padding: 20px 0;
+    }
+    .site_visual > ul > li:first-child{
+        margin-top: 0;
+    }
+    .site_visual > ul > li{
+        border-right: none;
+        margin-top: 30px;
+        padding-right: 10px;
+    }
+    .site_visual > ul > li > ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+    }
+    .site_visual > ul > li:nth-child(3) > ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 600px;
+        word-break: keep-all;
+    }
+    .site_visual > ul > li > ul > li{
+        margin: 0 0 0 5px;
+        font-size: 14px;
+    }
+    .site_visual > ul > li > ul > li:hover{
+        color: #aaa;
+    }
+    .vs1 h2{
+        font-size: 30px;
+        margin-bottom: 82px;
+    }
+    .vs2 > .wrap{
+        gap: 20px;
+    }
+    .vs2 .left_img{
+        flex: 4 1 0;
+        gap: 20px;
+    }
+    .vs2 .left_img > .lt{
+        background-size: cover;
+    }
+    .vs2 .left_img > .lt> p{
+        font-size: 16px;
+        right: 10px;
+        bottom: 10px;
+        color: #fff;
+    }
+    .vs2 .left_img > .lb> p{
+        width: 200px;
+        word-break: keep-all;
+        font-size: 16px;
+        font-weight: bold;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+    .vs2 .right_img{
+        flex: 4 1 0;
+        position:relative;
+    }
+    .vs2 .right_img > img{
+        width: 100%;
+        height: 100%;
+    }
+    .vs2 .right_img > a{
+        right: -80px;
+        font-size: 18px;
+    }
+    .vs3 h2{
+        font-size: 30px;
+        padding: 90px 0 30px;
+    }
+    .vs3 > .wrap p{
+        font-size: 12px;
+    }
+    .vs3 .birth article > div{
+        margin: 20px 16px 0;
+        height: 160px;
+        position: relative;
+    }
+    .vs3 .birth article div > img{
+        position: absolute;
+        display: block;
+        width: 80px;
+        /* top: 30%;
+        left: 60%;
+        transform: translateX(-50%); */
+    }
+    .vs3 .birth > article > p{
+        font-size: 14px;
+        font-weight: bold;
+        margin: 30px auto 15px;
+        width: 130px;
+    }
+    .vs3 > .wrap > a{
+        font-size: 16px;
+        margin: 20px 0 0 0;
+    }
+    .vs4 > .wrap{
+        margin: 0 auto;
+        width: 83.3%;
+        display: block;
+        padding: 40px 0;
+        gap: 20px;
+    }
+    .vs4 > .wrap > .vs04_left{
+        margin-bottom: 20px;
+    }
+    .vs4 > .wrap > .vs04_left article{
+        width: 500px;
+    }
+    .vs4 > .wrap > .vs04_right > .top{
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .vs4 > .wrap > .vs04_right > .top > article{
+        width: 380px;
+        height: 300px;
+    }
+    .vs4 > .wrap > .vs04_right > .top > article > p{
+        font-size: 14px;
+        width: 200px;
+        text-align: center;
+    }
+    .vs4 > .wrap > .vs04_right > .bottom{
+        gap: 20px;
+    }
+    .vs4 > .wrap > .vs04_right > .bottom > article{
+        width: 380px;
+        height: 300px;
+        position: relative;
+    }
+    .vs4 > .wrap > .vs04_right > .bottom > article > p{
+        font-size: 14px;
+    }
+    .vs5 .container article img{
+        width: 265px;
+    }
+    .vs5 .container article a{
+        font-size: 14px;
+        word-break: keep-all;
+        text-align: center;
+    }
+    footer h2{
+        margin: 0 auto;
+        width: 100px;
+        padding: 40px 0 17px;
+    }    
+    footer .content{
+        display: block;
+    }
+    footer .content > .left > .follow{
+        padding: 8px 40px;
+    }
+    footer .content > .left > .follow > .icon{
+        gap: 20px;
+    }
+    footer .content > .left > .footer_menu{
+        font-size: 14px;
+    }
+    footer .content > .left > .footer_menu > a{
+        margin: 0 20px;
+    }
+    footer .content > .left > .img > img{
+        width: 160px;
+        height: 36px;
+    }
+    footer .content > .left > .img > img:nth-child(2){
+        margin: 0 30px;
+    }
+    footer .content > .right{
+        line-height: 1.6;
+    }
+    footer .content > .right > p{
+        font-size: 12px;
+    }
+    footer .content > .right > p:last-child{
+        padding-bottom: 10px;
+    }
+}
+@media screen and (min-width : 400px) and (max-width: 729px){
+    header nav > ul > li:nth-child(3){
+        display: none;
+    }
+    header nav > ul > li:nth-child(4){
+        display: none;
+    }
+    header nav > ul > li:nth-child(5){
+        display: none;
+    }
+    header nav > ul > li:nth-child(6){
+        display: none;
+    }
+    header nav > ul > li:nth-child(7){
+        display: none;
+    }
+    .sitemap > .site_header{
+        margin: 80px auto 30px;
+    }
+    .site_visual > ul {
+        display: block;
+        padding: 20px 0;
+    }
+    .site_visual > ul > li:first-child{
+        margin-top: 0;
+    }
+    .site_visual > ul > li{
+        border-right: none;
+        margin-top: 140px;
+        padding-right: 10px;
+        position: relative;
+    }
+    .site_visual > ul > li:nth-child(2){
+        margin-top: 120px;
+    }
+    .site_visual > ul > li:nth-child(3){
+        margin-top: 40px;
+    }
+    .site_visual > ul > li:nth-child(4){
+        margin-top: 180px;
+    }
+    .site_visual > ul > li > ul{
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: block;
+        margin-top: 0;
+        text-align: right;
+    }
+    .site_visual > ul > li > ul > li{
+        margin: 0 0 0 5px;
+        font-size: 12px;
+    }
+    .site_visual > ul > li > ul > li:hover{
+        color: #aaa;
+    }
+        /* vs1 부분 slide는 400정도로 줄였을때 1개씩 보이기 할수 있는지 여쭈어보기 */
+    .vs1 h2{
+        font-size: 24px;
+        margin-bottom: 82px;
+    }
+    .vs2 > .wrap{
+        display: block;
+    }
+    .vs2 .left_img{
+        gap: 10px;
+    }
+    .vs2 .left_img > .lt{
+        width: 100%;
+        padding: 80px 0;
+        background-position: center;
+        background-size: cover;
+    }
+    .vs2 .left_img > .lt> p{
+        font-size: 14px;
+        right: 10px;
+        bottom: 10px;
+    }
+    .vs2 .left_img > .lb{
+        width: 100%;
+        padding: 80px 0;
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 10px;
+    }
+    .vs2 .left_img > .lb> p{
+        width: 200px;
+        word-break: keep-all;
+        font-size: 14px;
+        font-weight: bold;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+    .vs2 .right_img{
+        flex: 4 1 0;
+        position:relative;
+    }
+    .vs2 .right_img > img{
+        width: 100%;
+        height: 100%;
+    }
+    .vs2 .right_img > a{
+        right: -80px;
+        font-size: 18px;
+    }
+    .vs3 h2{
+        font-size: 24px;
+        padding: 80px 0 20px;
+    }
+    .vs3 > .wrap p{
+        position: relative;
+        left: 100px;
+        width: 80%;
+        word-break: keep-all;
+        font-size: 12px;
+    }
+    .vs3 .birth article > div{
+        margin: 20px 16px 0;
+        height: 160px;
+        position: relative;
+    }
+    .vs3 .birth article div > img{
+        position: absolute;
+        display: block;
+        /* width: 80px;
+        top: 30%;
+        left: 60%;
+        transform: translateX(-50%); */
+    }
+    .vs3 .birth > article > p{
+        font-size: 14px;
+        font-weight: bold;
+        margin: 30px auto 15px;
+        width: 130px;
+    }
+    .vs3 > .wrap > a{
+        font-size: 12px;
+        margin: 20px 0 0 0;
+    }
+    .vs4 > .wrap{
+        margin: 0 auto;
+        width: 83.3%;
+        display: block;
+        padding: 10px 0;
+        gap: 20px;
+    }
+    .vs4 > .wrap > .vs04_left{
+        margin-bottom: 20px;
+    }
+    .vs4 > .wrap > .vs04_left article{
+        width: 400px;
+    }
+    .vs4 > .wrap > .vs04_right > .top{
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .vs4 > .wrap > .vs04_right > .top > article{
+        width: 250px;
+        height: 150px;
+    }
+    .vs4 > .wrap > .vs04_right > .top > article:nth-child(1) > p{
+        font-size: 14px;
+        width: 90px;
+        text-align: center;
+        left: 50%;
+        bottom: 20px;
+    }
+    .vs4 > .wrap > .vs04_right > .top > article:nth-child(2) > p{
+        font-size: 14px;
+        text-align: center;
+    }
+    .vs4 > .wrap > .vs04_right > .bottom{
+        gap: 20px;
+    }
+    .vs4 > .wrap > .vs04_right > .bottom > article{
+        width: 250px;
+        height: 150px;
+        position: relative;
+    }
+    .vs4 > .wrap > .vs04_right > .bottom > article:nth-child(1) > p{
+        font-size: 14px;
+    }
+    .vs4 > .wrap > .vs04_right > .bottom > article:nth-child(2) > p{
+        font-size: 14px;
+        word-break: keep-all;
+    }
+    .vs5 .container article img{
+        width: 265px;
+    }
+    .vs5 .container article a{
+        font-size: 14px;
+        word-break: keep-all;
+        text-align: center;
+    }
+    footer h2{
+        margin: 0 auto;
+        width: 80px;
+        padding: 40px 0 17px;
+    }    
+    footer .content{
+        display: block;
+    }
+    footer .content > .left > .follow{
+        padding: 8px 20px;
+        gap: 30px;
+        margin-bottom: 5px;
+    }
+    footer .content > .left > .follow > .icon{
+        gap: 10px;
+    }
+    footer .content > .left > .follow > .icon > a{
+        display: block;
+        width: 24px;
+        height: 24px;
+    }
+    footer .content > .left > .follow > .icon > a:nth-child(2){
+        width: 30px;
+    }
+    footer .content > .left > .footer_menu{
+        font-size: 14px;
+        padding: 14px 10px;
+        width: 300px;
+        margin: 0 auto 8px;
+    }
+    footer .content > .left > .footer_menu > a{
+        margin: 0 5px;
+    }
+    footer .content > .left > .footer_menu > a:hover{
+       font-size: 14px;   
+    }
+    footer .content > .left > .img > img{
+        width: 120px;
+        height: 26px;
+        text-align: center;
+        margin: 0;
+    }
+    footer .content > .left > .img > img:nth-child(2){
+        margin: 0 8px;
+    }
+    footer .content > .right{
+        line-height: 1.0;
+    }
+    footer .content > .right > p{
+        font-size: 10px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    footer .content > .right > p:nth-child(5){
+        display: none;
+    }
+}
+
