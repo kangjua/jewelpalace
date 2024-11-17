@@ -543,6 +543,17 @@ footer .content > .left > .footer_menu{
 footer .content > .left > .footer_menu > a{
     margin: 0 40px;
 }
+footer .content > .left > .footer_menu > .sitemap_on {
+    border: none;
+    background-color: transparent;
+    margin: 0 40px;
+    font-size: 16px;   
+}
+footer .content > .left > .footer_menu > .sitemap_on:hover{
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;   
+}
 footer .content > .left > .footer_menu > a:hover{
     color: #000;
     font-weight: bold;

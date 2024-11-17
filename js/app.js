@@ -124,3 +124,9 @@ let vs05lide = $('.container').slick({
     variableWidth:true,
     arrows:false,
 });
+$('footer .sitemap_on').click(function(){
+    $('.sitemap').css('display','block');
+})
+$('.light_btn').click(function(){
+    $('.sitemap').css('display','none');
+})
